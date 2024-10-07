@@ -38,7 +38,12 @@ export default function App() {
               onChange={(e) => setUrl(e.target.value)}
               required
             />
-            <Button type="submit" className="w-full" disabled={isDownloading}>
+            <Button
+              type="submit"
+              className="w-full"
+              variant="black" // Usando la variante negra
+              disabled={isDownloading}
+            >
               {isDownloading ? (
                 <>
                   <span className="mr-2">Downloading...</span>
